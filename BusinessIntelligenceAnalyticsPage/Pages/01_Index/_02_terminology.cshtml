@@ -1,0 +1,187 @@
+﻿@page
+@model IndexModel
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+<!-- term definitions -------->
+<div id="terms" " class="section section-bg-10 section-fixed pt-18 pb-18" style="background-image: url(images/background/bg_1920x800_2.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div data-wow-delay="0.3s" class="text-center white wow fadeInUp">
+                    <h1 class="fw-bolder white mb-1 section-title">TERMINOLOGY</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section pt-7">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div data-wow-delay="0.3s" class="text-center mb-5 wow fadeInUp" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                    <h2 class="fw-600 dark-color section-title mb-1">Business Inteligence vs. Analytics vs. Performance Management</h2>
+                    <h3 class="dark-color">
+                        What does it mean and what’s the difference?
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section pb-9">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div data-wow-delay="0.3s" class="wow fadeInUp">
+                    <p>
+                        <span class="first-letter">T</span>
+                        hese days, there are a lot of words being thrown around when it comes to talking about data and how organizations make use of it.
+                        Data management is a fairly self-explanatory term, but then there’s business intelligence (BI), analytics,
+                        and enterprise performance management (EPM), also called business performance management (BPM).
+                    </p>
+                    <p>
+                        What do these terms mean in the context of organizational data, and what differentiates them? And what do organizations
+                        need to look at to decide which of these three different types of software they need to best address their data intelligence needs?
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div data-wow-delay="0.4s" class="wow fadeInUp">
+                    <p>
+                        The BI vs. analytics vs. EPM situation is made more difficult by the fact that some software vendors offer solutions that
+                        actually incorporate EPM and BI or analytics within the same application, making it harder to distinguish between these software terms.
+                    </p>
+                    <p>
+                        We try explore these concepts in the context of business, and provide some key differentiators that should help provide a better understanding of what BI, analytics, and EPM tools and processes represent and when each is needed.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <!--<div data-wow-delay="0.4s" class="text-center wow fadeInUp">
+                    <img src="images/image_360x326_APEX.jpg" alt="" />
+                </div>
+                -->
+                <div data-wow-delay="0.4s" class="text-center wow fadeInUp portfolio-grid masonry-grid-post">
+                    <div class="portfolio-masonry-item masonry-item text-center photography studio">
+                        <a href="images/portfolio/portfolio_650x650_GartnerBI_Maturity.jpg" class="mfp-image gallery-item" data-rel="prettyPhoto[gallery]">
+                            <div class="grid-image-wrapper">
+                                <div class="grid-overlay" data-color="rgba(255, 255, 255 ,0.85)" style="background-color: rgba(255, 255, 255, 0.85);"></div>
+                                <div class="grid-thumbnail">
+                                    <img src="images/portfolio/portfolio_360x326_GartnerBI_Maturity.jpg" alt="">
+                                </div>
+                                <div class="grid-content-wrapper">
+                                    <div class="grid-content-inner">
+                                        <div class="grid-content">
+                                            <h3 class="os-font">BI MATURITY LEVELS</h3>
+                                            <div class="liner"></div>
+                                            <div class="grid-cate">GARTNER</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section pt-7 mb-7">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="seperate-line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section pb-7">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div data-wow-delay="0.3s" class="wow fadeInLeft" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                        <h4 class="fw-600 dark-color mb-1">BI and Analytics—Different Sides of the Same Coin</h4>
+                        <p>
+                            Business Intelligence and Business analytics are the the root of organizational data use.
+                            Both these terms refer to getting and processing the data generated within a company,
+                            and are often used interchangeably, but they actually involve somewhat different aspects of data processing and use.
+                        </p>
+                        <p>
+                            Whereas BI is viewed mainly as the process of sourcing, gathering, and then formatting information for delivery to appropriate end users, analytics is really a broader concept.
+                            Analytics involves not just the practice of accessing and processing the data but also manipulating and drilling into that data to understand trends and get answers to specific questions.
+                        </p>
+                        <p>
+                            Business analytics makes extensive use of statistical analysis, including explanatory and predictive modeling, and fact-based management to drive decision making.
+                        </p>
+                        <p>
+                            So while a BI tool would be able to perform basic reporting, analysis, and manipulation, analytics goes a bit further to identify a trend and to explore the trend’s implications,
+                            such as how that trend might work in combination with other trends to affect a certain department, forecast, etc.
+                        </p>
+                        <h4 class="fw-600 dark-color mb-1">What are business intelligence (BI) tools?</h4>
+                        <p>
+                            Business intelligence (BI) tools are types of application software that collect and process large amounts of unstructured data from internal and external systems,
+                            including books, journals, documents, health records, images, files, email, video, and other business sources. While not as flexible as business analytics tools,
+                            BI tools provide a way of amassing data to find information primarily through queries. These tools also help prepare data for analysis so that you can create reports,
+                            dashboards, and data visualizations. The results give both employees and managers the power to accelerate and improve decision making, increase operational efficiency,
+                            pinpoint new revenue potentials, identify market trends, report genuine KPIs, and identify new business opportunities.
+                        </p>
+                        <p>
+                            Typically used for more straightforward querying and reporting of business data, business intelligence tools can combine a broad set of data analysis applications
+                            including ad hoc analysis and querying, enterprise reporting, online analytical processing (OLAP), mobile BI, real-time BI, operational BI, cloud and software as a service BI,
+                            open-source BI, collaborative BI, and location intelligence. It can also include data visualization software for designing charts, as well as tools for building BI dashboards
+                            and performance scorecards that display business metrics and KPIs to bring company data to life in easy-to-understand visuals.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div data-wow-delay="0.3s" class="wow fadeInRight" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;">
+
+
+                        <h4 class="fw-600 dark-color mb-1">What are business analytics tools?</h4>
+                        <p>
+                            Business analytics tools are types of application software that retrieve data from one or more business systems and combine it in a repository,
+                            such as a data warehouse, to be reviewed and analyzed. Most organizations use more than one analytics tool, including spreadsheets with statistical functions,
+                            statistical software packages, sophisticated data mining tools, and predictive modeling tools. Together, these business analytics tools give the organization a complete overview
+                            of the company to provide key insights and understanding of the business so smarter decisions may be made regarding business operations, customer conversions, and more.
+                        </p>
+                        <p>
+                            While business intelligence tools also collect and display aggregate data, business analytics tools go a step further to not only report the results of the data,
+                            but explain why the results occurred to help identify weaknesses, fix potential problem areas, alert decision makers to unforeseen events, and even forecast future results
+                            based on decisions the company might make. This gives organizations the understanding and confidence to achieve business goals, keep the company competitive,
+                            and increase overall customer satisfaction.
+                        </p>
+
+                        <h4 class="fw-600 dark-color mb-1">The Fine Line between BI/Analytics and EPM</h4>
+                        <p>
+                            BI happens more at the business analyst level, as BI tools enable organizations to analyze large volumes of information in order to gain effective
+                            support during the decision-making process. In contrast, EPM is used at the operational, planning, and organizational levels to help organizations improve their business performance.
+                        </p>
+                        <p>
+                            BI can deliver valuable information regarding the current status of different parts of a business, based on specific measures and reports.
+                            Analytics can dive deeper into these results to answer specific questions.
+                        </p>
+                        <p>
+                            EPM uses these BI and analytics results by putting a set of processes in place that will improve company performance, involving planning, strategizing, and measuring against goals.
+                        </p>
+
+                        <p>
+                            Those organizations employing EPM solutions have understood these main differences and discovered that in order to improve their EPM practices,
+                            they need to build them on a solid BI foundation.
+                            BI and analytics thus serve as the base platform for deploying effective EPM initiatives.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>		

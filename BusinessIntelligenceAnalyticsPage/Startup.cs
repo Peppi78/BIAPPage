@@ -45,6 +45,7 @@ namespace BusinessIntelligenceAnalyticsPage
             .AddRazorPagesOptions(options =>
             {
                 options.Conventions.AllowAnonymousToFolder("/Account");
+                options.Conventions.AllowAnonymousToPage("/Index");
             });
         }
 

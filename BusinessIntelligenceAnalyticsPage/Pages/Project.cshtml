@@ -1,0 +1,22 @@
+﻿@page
+@model BusinessIntelligenceAnalyticsPage.Pages.ProjectModel
+@{
+    ViewData["Title"] = "Project";
+}
+
+
+@{ Html.RenderPartial("02_Project/_01_fullscreen_banner.cshtml", Model); }
+@{ Html.RenderPartial("02_Project/_02_terminology.cshtml", Model); }
+@{ Html.RenderPartial("02_Project/_03_azure.cshtml", Model); }
+
+
+@section NaviBar
+    {
+    <li><a class="onepage current" href="#fullscreen-banner">Home</a></li>
+    <li><a class="onepage" href="#terms">Terminology</a></li>
+    <li><a class="onepage" href="#microsoft">Why Microsoft?</a></li>
+
+
+    <li><a asp-page="/Contact">Contact</a></li>
+
+}
